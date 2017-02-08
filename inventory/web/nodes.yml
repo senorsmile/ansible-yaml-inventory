@@ -1,0 +1,14 @@
+---
+web:
+  children:
+    web_prod:
+      hosts:
+        web1:
+    web_qa:
+      hosts:
+        web2:
+  hosts:
+    web1:
+      #foo: 'hello'
+    web2:
+      foo: 'bye'

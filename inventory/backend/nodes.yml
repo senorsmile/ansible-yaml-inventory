@@ -1,0 +1,15 @@
+---
+backend:
+  vars:
+    foo: bar
+  hosts:
+    django1:
+      foo: 'one'
+    django2:
+      foo: 'two'
+  children:
+    backend_web:
+      vars:
+        foo: 'money'
+      hosts:
+        web1:
