@@ -1,6 +1,8 @@
 nodes = [
   { :hostname => 'web1', :ip => '192.168.200.11', :box => 'precise64', :forward => '2201' },
-  { :hostname => 'web2', :ip => '192.168.200.12', :box => 'precise64', :forward => '2202', :ram => 512 }
+  { :hostname => 'web2', :ip => '192.168.200.12', :box => 'precise64', :forward => '2202' },
+  { :hostname => 'django1', :ip => '192.168.200.13', :box => 'precise64', :forward => '2203' },
+  { :hostname => 'django1', :ip => '192.168.200.14', :box => 'precise64', :forward => '2204' },
 ]
 
 Vagrant.configure("2") do |config|

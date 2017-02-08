@@ -4,9 +4,11 @@ web:
     web_prod:
       hosts:
         web1:
+          ansible_host: 192.168.200.11
     web_qa:
       hosts:
         web2:
+          ansible_host: 192.168.200.12
   hosts:
     web1:
       #foo: 'hello'

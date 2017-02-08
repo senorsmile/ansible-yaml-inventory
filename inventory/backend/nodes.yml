@@ -5,8 +5,10 @@ backend:
   hosts:
     django1:
       foo: 'one'
+      ansible_host: 192.168.200.13
     django2:
       foo: 'two'
+      ansible_host: 192.168.200.14
   children:
     backend_web:
       vars:
